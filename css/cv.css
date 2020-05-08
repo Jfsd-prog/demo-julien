@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --jaune: #ffca04;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+aside {
+  background-color: var(--jaune);
+}
+
+h1 span{
+  color:#ffca04;
+}
+
+h1{
+  font-size        : 40px;
+  margin-block-end : 0;
+}
+
+h2 {
+  margin-block-start: 0;
+}
+h4 {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header aside {
+  text-align: center;
+}
+
+header aside img {
+  border-radius    : 50%;
+  background-color : white;
+  width            : 50%;
+  border           : 2px solid #daaf10;
+  margin-top       : 1rem;
+}
+
+header div {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+}
+
+main h3 {
+  border-bottom  : 1px solid var(--jaune);
+  text-transform : uppercase;
+}
+
+main h3:before {
+  font-family  : "Font Awesome 5 Free";
+  color        : var(--jaune);
+  margin-right : 1rem;
+}
+
+main section:nth-of-type(1) h3:before {
+  content: "\f19d";
+}
+
+main section:nth-of-type(2) h3:before {
+  content: "\f0b1";
+}
+
+main section:nth-of-type(3) h3:before {
+  content: "\f303";
+}
+
+main ul {
+  list-style-type      : none;
+  padding-inline-start : 0;
+}
+
+main li {
+  margin     : 1rem;
+  box-shadow : 0 0 7px 0 #c8c8c8;
+  padding    : 1rem;
+}
+
+main li:before {
+  content      : "\f111";
+  font-family  : "Font Awesome 5 Free";
+  color        : var(--jaune);
+  margin-right : .5rem;
+}
+
+main li:first-of-type:before {
+  content: "\f192";
+}
+
+main li aside strong {
+  display: block;
+}
+
+principal aside {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+}
+
+principal aside section:nth-child(2) p {
+  display         : flex;
+  justify-content : space-around;
+}
+
+principal aside h3 {
+  color            : var(--jaune);
+  background-color : #404040;
+  text-align       : center;
+}
+
+principal aside i.fas {
+  padding       : 1rem;
+  border-radius : 50%;
+  border        : 2px solid black;
+  font-size     : 1.5rem;
+}
+
+principal aside section:nth-of-type(1) i {
+  padding    : 0 1rem;
+  display    : block;
+  text-align : justify;
+}
+
+principal li aside {
+  background-color: initial;
+}
+
+@media screen and (min-width:768px) {
+  article {
+    width: 70%;
+  }
+  aside {
+    width     : 33vw;
+    max-width : 400px;
+  }
+  header {
+    display    : flex;
+    text-align : initial;
+  }
+  header div {
+    width        : -webkit-fill-available;
+    padding-left : 3rem;
+  }
+  header div:after {
+    border-top : 1px solid var(--jaune);
+    display    : block;
+    width      : 3rem;
+    content    : " ";
+    margin-top : -1rem;
+  }
+  li aside {
+    width           : 20%;
+    justify-content : initial;
+  }
+  main {
+    width        : -webkit-fill-available;
+    padding-left : 2rem;
+  }
+  main li {
+    box-shadow      : none;
+    margin          : initial;
+    display         : flex;
+    justify-content : space-between;
+  }
+  main section:nth-of-type(3) h3 {
+    margin-bottom: 0;
+  }
+  main section:nth-of-type(3) ul {
+    display            : flex;
+    justify-content    : start;
+    margin-block-start : 0;
+    margin-block-end   : 0;
+  }
+  main section:nth-of-type(3) li {
+    display : block;
+    width   : 25vw;
+  }
+  main section:nth-of-type(3) li:before {
+    content: "";
+  }
+  main section:nth-of-type(3) strong {
+    display: block;
+  }
+  principal {
+    display         : flex;
+    flex-direction  : row-reverse;
+    padding         : 0;
+    justify-content : space-between;
+  }
+  principal aside section:nth-child(3) {
+    order: -2;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  main li {
+    justify-content: flex-start;
+  }
+}
